@@ -1,0 +1,19 @@
+﻿kind: Service
+apiVersion: v1
+metadata:
+  name: ccbinfra
+  labels:
+    app: oracle-ccb-infra
+    app.kubernetes.io/component: oracle-ccb-infra
+    app.kubernetes.io/instance: oracle-ccb-infra
+spec:
+  ports:
+    - name: 8002-tcp
+      protocol: TCP
+      port: 8002
+    - name: 9002-tcp
+      protocol: TCP
+      port: 9002
+  selector:
+    deployment: oracle-ccb-infra
+    

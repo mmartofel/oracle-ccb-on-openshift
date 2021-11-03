@@ -1,0 +1,37 @@
+﻿kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: oracle-ccb-database
+  labels:
+    app: oracle-ccb-database
+    app.kubernetes.io/component: oracle-ccb-database
+    app.kubernetes.io/instance: oracle-ccb-database
+    app.kubernetes.io/part-of: ORACLE-CCB
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: oracle-ccb-database
+  template:
+    metadata:
+      labels:
+        deployment: oracle-ccb-database
+    spec:
+      hostname: ccbdb
+      securityContext:
+          runAsUser: 54321
+          fsGroup: 54321 
+      containers:
+        - name: oracle-ccb-database
+          image: >-
+            mmartofel/oracle-ccb-database:2.8
+          ports:
+            - containerPort: 1521
+              protocol: TCP
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      schedulerName: default-scheduler

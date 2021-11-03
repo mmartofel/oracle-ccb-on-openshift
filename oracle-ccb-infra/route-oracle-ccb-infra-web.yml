@@ -1,0 +1,19 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: oracle-ccb-infra-route-web
+  labels:
+    app: oracle-ccb-infra
+    app.kubernetes.io/component: oracle-ccb-infra
+    app.kubernetes.io/instance: oracle-ccb-infra
+spec:
+  to:
+    kind: Service
+    name: ccbinfra
+    weight: 100
+  port:
+    targetPort: 8002
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: passthrough
+  wildcardPolicy: None

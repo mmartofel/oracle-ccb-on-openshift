@@ -1,0 +1,16 @@
+﻿kind: Service
+apiVersion: v1
+metadata:
+  name: ccbdb
+  labels:
+    app: oracle-ccb-database
+    app.kubernetes.io/component: oracle-ccb-database
+    app.kubernetes.io/instance: oracle-ccb-database
+spec:
+  ports:
+    - name: 1521-tcp
+      protocol: TCP
+      port: 1521
+      targetPort: 1521
+  selector:
+    deployment: oracle-ccb-database
