@@ -66,9 +66,23 @@ login credentials are:
 
 Then head to Environment > Servers > Control and Start ccbserver instance.
 
-
 ![ScreenShot](/screenshots/8.png)
 
+ccbserver server startup progress could be followed at the log:
 
+`` /u01/oracle/user_projects/domains/ccb_domain/servers/ccbserver/logs/ccbserver.log ``
 
+After successfull startup of ccbserver you are ready to login to CCB console itself (again the correct link was reported by deploy.sh script back at the point 2), for example:
+
+`` https://oracle-ccb-infra-route-web-oracle.[YOUR_OCP_DOMAIN]/ouaf/loginPage.jsp ``
+
+use demo credentials:
+
+`` SYSUSER / sysuser00 ``
+
+![ScreenShot](/screenshots/9.png)
+
+Enjoy your Oracle CCB demo instance!
+
+![ScreenShot](/screenshots/10.png)
 
