@@ -3,6 +3,11 @@
 At this repository I collected scripts that can help you to touch base with Oracle Utilities Customer Care and Billing v2.8 and run it on Red Hat OpenShift in the containers.
 Scripts make use of Red Hat OpenShift command line utility 'oc' to create required deployments, services and routes.
 
+If you don't have Red Hat OpenShift at your disposal it's easy to get it in form of Azure Red Hat OpenShift (ARO), please have a look at my other repo explaining the process:
+
+[ https://github.com/mmartofel/azure_redhat_openshift ] (https://github.com/mmartofel/azure_redhat_openshift)
+
+
 Login to you desired Red Hat OpenShift cluster, for exmple:
 
 `` oc login --token=sha256~[YOUR_TOKEN] --server=https://[YOUR_API_ROUTE]:6443 ``
