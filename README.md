@@ -5,7 +5,7 @@ Scripts make use of Red Hat OpenShift command line utility 'oc' to create requir
 
 If you don't have Red Hat OpenShift at your disposal it's easy to get it in form of Azure Red Hat OpenShift (ARO), please have a look at my other repo explaining the process:
 
-[ https://github.com/mmartofel/azure_redhat_openshift ] (https://github.com/mmartofel/azure_redhat_openshift)
+[ https://github.com/mmartofel/azure_redhat_openshift ] 
 
 
 Login to you desired Red Hat OpenShift cluster, for exmple:
