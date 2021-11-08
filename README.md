@@ -24,6 +24,12 @@ your container will start now
 
 ![ScreenShot](/screenshots/1.png)
 
+after container will start as well as Oracle Database inside of it, container log should to show like the following
+
+![ScreenShot](/screenshots/1.png)
+
+now your demo database is ready
+
 2. Run Oracle Fussion Middleware container.
 
 Then run Oracle Fussion Middleware container preconfigured to connect to the database created at previous step.
