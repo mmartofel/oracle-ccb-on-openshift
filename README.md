@@ -55,12 +55,14 @@ Correct startup of NodeManager will be reported at the following log file:
 
 `` /u01/oracle/user_projects/domains/ccb_domain/nodemanager/nodemanager.log ``
 
+![ScreenShot](/screenshots/6.png)
+
 Direct your browser to the link reported by deploy.sh script as an Oracle WebLogic Console link.
 login credentials are:
 
 `` weblogic / Weblogic123 ``
 
-![ScreenShot](/screenshots/6.png)
+![ScreenShot](/screenshots/7.png)
 
 
 
