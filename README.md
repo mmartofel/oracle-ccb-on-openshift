@@ -20,7 +20,9 @@ First run Oracle Database container populated with demo data of Oracle Utilities
 `` cd ./oracle-ccb-database ``
 `` ./deploy.sh ``
 
+your container will start now
 
+![ScreenShot](/screenshots/1.png)
 
 2. Run Oracle Fussion Middleware container.
 
