@@ -64,9 +64,10 @@ login credentials are:
 
 ![ScreenShot](/screenshots/7.png)
 
+Then head to Environment > Servers > Control and Start ccbserver instance.
 
 
-
+![ScreenShot](/screenshots/8.png)
 
 
 
