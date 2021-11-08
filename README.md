@@ -47,4 +47,25 @@ after container will start as well as Oracle WebLogic inside of it, container lo
 
 now your demo middleware is ready
 
+Now in your oracle-ccb-infra container you need to run NodeManager process using container terminal window (didn't found more convinient way to do that, sorry)
+
+![ScreenShot](/screenshots/5.png)
+
+Correct startup of NodeManager will be reported at the following log file:
+
+`` /u01/oracle/user_projects/domains/ccb_domain/nodemanager/nodemanager.log ``
+
+Direct your browser to the link reported by deploy.sh script as an Oracle WebLogic Console link.
+login credentials are:
+
+`` weblogic / Weblogic123 ``
+
+![ScreenShot](/screenshots/6.png)
+
+
+
+
+
+
+
 
