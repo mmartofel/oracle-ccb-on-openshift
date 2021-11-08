@@ -26,7 +26,7 @@ your container will start now
 
 after container will start as well as Oracle Database inside of it, container log should to show like the following
 
-![ScreenShot](/screenshots/1.png)
+![ScreenShot](/screenshots/2.png)
 
 now your demo database is ready
 
@@ -36,4 +36,15 @@ Then run Oracle Fussion Middleware container preconfigured to connect to the dat
 
 `` cd ./oracle-ccb-infra ``
 `` ./deploy.sh ``
+
+your second container will start now
+
+![ScreenShot](/screenshots/3.png)
+
+after container will start as well as Oracle WebLogic inside of it, container log should to show like the following
+
+![ScreenShot](/screenshots/4.png)
+
+now your demo middleware is ready
+
 
